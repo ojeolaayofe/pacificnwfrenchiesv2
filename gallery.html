@@ -25,6 +25,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    .modal-body {
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
+    }
+
+    .modal-body img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .modal-body img:hover {
+      transform: scale(1.1);
+    }
+
+    .enlarged-image {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+      display: block;
+    }
+    .additional-info {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 10px;
+      text-align: center;
+   
+    }
+
+    .additional-info p {
+      margin-bottom: 5px;
+    }
+
+    .additional-info a {
+      margin-top: 10px;
+    }
+    
+  </style>
 </head>
 
 <body>
@@ -239,200 +282,332 @@
                     </h2>
                     <hr class="hr">
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="img/d1.jpeg">
-                                <img src="img/d1.jpeg" alt="Card Image" class="card-img-top">
-                            </a>
-                            <div class="card-body text-center">
-        
-                                <a href="reservation.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-2">Reserve</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="img/d2.jpg">
-                                <img src="img/d2.jpg" alt="Card Image" class="card-img-top">
-                            </a>
-                            <div class="card-body text-center">
-                                <!-- <h6>
-                                    <a href="#">Lorem Ipsum</a>
-                                </h6> -->
-                                
-                                <a href="reservation.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-2">Reserve</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="img/d3.png">
-                                <img src="img/d3.png" alt="Card Image" class="card-img-top">
-                            </a>
-                            <div class="card-body text-center">
-                                
-                                <a href="reservation.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-2">Reserve</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="img/d4.jpeg">
-                                <img src="img/d4.jpeg" alt="Card Image" class="card-img-top">
-                            </a>
-                            <div class="card-body text-center">
-                             
-                                <a href="reservation.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-2">Reserve</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="img/d5.jpeg">
-                                <img src="img/d5.jpeg" alt="Card Image" class="card-img-top">
-                            </a>
-                            <div class="card-body text-center">
-                            
-                                <a href="reservation.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-2">Reserve</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="img/d6.jpeg">
-                                <img src="img/d6.jpeg" alt="Card Image" class="card-img-top">
-                            </a>
-                            <div class="card-bod text-center">
-                              
-                                <a href="reservation.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-2">Reserve</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="img/d7.jpeg">
-                                <img src="img/d7.jpeg" alt="Card Image" class="card-img-top">
-                            </a>
-                            <div class="card-body text-center">
-                               
-                                <a href="reservation.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-2">Reserve</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="img/d8.jpeg">
-                                <img src="img/d8.jpeg" alt="Card Image" class="card-img-top">
-                            </a>
-                            <div class="card-body text-center">
-                              
-                                <a href="reservation.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-2">Reserve</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 transform-on-hover">
-                            <a class="lightbox" href="img/d9.jpeg">
-                                <img src="img/d9.jpeg" alt="Card Image" class="card-img-top">
-                            </a>
-                            <div class="card-body text-center">
-                            
-                                <a href="reservation.html" class="btn btn-lg btn-primary mt-3 mt-md-4 px-2">Reserve</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    <!-- Services End -->
+                
+                
 
 
-    <!-- Booking Start -->
+<div class="container mt-5">
+  <div class="row">
+    <!-- First Card -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card border-0 transform-on-hover">
+        <img src="img/kai1.png" alt="Main Image" class="rounded" data-toggle="modal" data-target="#imageModal1">
+        <div class="additional-info">
+          <p>  Name: Kai </p>
+          <p>ID: 123456</p>
+          <p>DOB: 09/09/2023</p>
+          <p>Color: blue fawn Merle</p>
+          <p>Sex: male</p>
+          <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
+        </div>
+      </div>
+    </div>
     
-    <!-- Booking Start -->
+    <!-- Second Card -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card border-0 transform-on-hover">
+        <img src="img/p1.jpeg" alt="Main Image" class="img-fluid" data-toggle="modal" data-target="#imageModal2">
+        <div class="additional-info">
+<p>  Name: pandora </p>
+<p>ID: 123456</p>
+<p>DOB: 09/09/2023</p>
+<p>Color: black tri</p>
+<p>Sex: female</p>
+          <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card border-0 transform-on-hover">
+          <img src="img/pe1.jpeg" alt="Main Image" class="rounded" data-toggle="modal" data-target="#imageModal3">
+          <div class="additional-info">
+            <p>  Name: pearl</p>
+            <p>ID: 123456</p>
+            <p>DOB: 09/09/2023</p>
+            <p>Type: blue  Merle</p>
+            <p>Sex: female</p>
+            <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 transform-on-hover">
+          <img src="img/l3.jpeg" alt="Main Image" class="rounded" data-toggle="modal" data-target="#imageModal4">
+          <div class="additional-info">
+            <p>  Name: Love</p>
+            <p>ID: 123456</p>
+            <p>DOB: 09/09/2023</p>
+            <p>Type: blue fawn</p>
+            <p>Sex: male</p>
+            <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
+          </div>
+        </div>
+      </div><div class="col-md-6 col-lg-4">
+        <div class="card border-0 transform-on-hover">
+          <img src="img/s1.jpeg" alt="Main Image" class="rounded" data-toggle="modal" data-target="#imageModal5">
+          <div class="additional-info">
+            <p>  Name: shiloh</p>
+            <p>ID: 123456</p>
+            <p>DOB: 09/09/2023</p>
+            <p>Type: fluffy Merle</p>
+            <p>Sex: female</p>
+            <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
+          </div>
+        </div>
+  </div>
+</div>
 
+<!-- Modals for each image -->
+<!-- Modal for Image 1 -->
+<div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- (content for modal 1) -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Additional Images</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/k22.png" alt="Image 1" class="img-fluid clickable-image rounded" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/k22.png">
+            </div>
+            <div class="col-md-6">
+              <img src="img/kai1.png" alt="Image 2" class="img-fluid clickable-image rounded" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
+            </div>
+            <div class="col-md-6">
+                <img src="img/kai4.jpeg" alt="Image 2" class="img-fluid clickable-image rounded" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
+              </div>
+              <div class="col-md-6">
+                <img src="img/l3.jpeg" alt="Image 2" class="img-fluid clickable-image rounded" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
+              </div>
+              
+            <!-- Add more images as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Modal for Image 2 -->
+<div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- (content for modal 2) -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Additional Images</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/p1.jpeg" alt="Image 1" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c1.jpg">
+            </div>
+            <div class="col-md-6">
+              <img src="img/p2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
+            </div>
+            <div class="col-md-6">
+                <img src="img/p3.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
+              </div>
+              <div class="col-md-6">
+                <img src="img/p4.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
+              </div>
+            <!-- Add more images as needed -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Image 3 -->
+<div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- (content for modal 3) -->
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Additional Images</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/pe1.jpeg" alt="Image 1" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/pe1.jpeg">
+              </div>
+              <div class="col-md-6">
+                <img src="img/pe2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/pe2.jpeg">
+              </div>
+              <div class="col-md-6">
+                  <img src="img/pe3.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
+                </div>
+                <div class="col-md-6">
+                  <img src="img/pe4.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
+                </div>
+              <!-- Add more images as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal for Image 4 -->
+<div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- (content for modal 3) -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">More Love Pictures</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/l1.jpeg" alt="Image 1" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/l1.jpeg">
+            </div>
+            <div class="col-md-6">
+              <img src="img/l2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/l2.jpeg">
+            </div>
+            <div class="col-md-6">
+                <img src="img/l4.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/l4.jpeg">
+              </div>
+              <div class="col-md-6">
+                <img src="img/l5.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/l5.jpeg">
+              </div>
+            <!-- Add more images as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Modal for Image 4 -->
+ <div class="modal fade" id="imageModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- (content for modal 3) -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">More Additional shiloh Pictures</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/s1.jpeg" alt="Image 1" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/s1.jpeg">
+            </div>
+            <div class="col-md-6">
+              <img src="img/s2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/s2.jpeg">
+            </div>
+            <div class="col-md-6">
+                <img src="img/s1.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/s1.jpeg">
+              </div>
+              <div class="col-md-6">
+                <img src="img/s2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/s2.jpeg">
+              </div>
+            <!-- Add more images as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   </div>
+   </div>
    
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-4 col-md-12 mb-5">
-                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">PacificNW</span>Frenchies</h1>
-                <p class="m-0">Ipsum amet sed vero et lorem stet eos ut, labore sed sed stet sea est ipsum ut. Volup amet ea sanct ipsum, dolore vero lorem no duo eirmod. Eirmod amet ipsum no ipsum lorem clita ut. Ut sed sit lorem ea lorem sed, amet stet sit sea ea diam tempor kasd kasd. Diam nonumy etsit tempor ut sed diam sed et ea</p>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-primary mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>15640 NE Fourth Plain Blvd Ste 106 #134 VANCOUVER, WA 98682.</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@pacificnwfrenchies.com</p>
-                        <div class="d-flex justify-content-start mt-4">
-                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+        <div class="col-lg-4 col-md-12 mb-5">
+            <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">PacificNW</span>Frenchies</h1>
+            <p class="m-0">We pride ourselves on raising the finest French Bulldogs, known for their charming personalities and robust health. Our breeding program is meticulously designed to ensure each puppy is a shining example of the breed's best qualities.</p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>15640 NE Fourth Plain Blvd Ste 106 #134 VANCOUVER, WA 98682.</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope mr-2"></i>info@pacificnwfrenchies.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <!-- <div class="col-md-4 mb-5">
-                        <h5 class="text-primary mb-4">Popular Links</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Team</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-md-4 mb-5">
-                        <h5 class="text-primary mb-4">Newsletter</h5>
-                        <form action="">
-                            <div class="form-group">
-                                <input type="text" class="form-control border-0" placeholder="Your Name" required="required" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control border-0" placeholder="Your Email" required="required" />
-                            </div>
-                            <div>
-                                <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Submit Now</button>
-                            </div>
-                        </form>
-                    </div> -->
                 </div>
+                <!-- <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Popular Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Team</a>
+                        <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Newsletter</h5>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control border-0" placeholder="Your Name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control border-0" placeholder="Your Email" required="required" />
+                        </div>
+                        <div>
+                            <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Submit Now</button>
+                        </div>
+                    </form>
+                </div> -->
             </div>
         </div>
     </div>
-    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
-        <div class="row">
-            <!-- <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">
-                    &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
-                    <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div> -->
-            <!-- <div class="col-md-6 text-center text-md-right">
-                <ul class="nav d-inline-flex">
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Help</a>
-                    </li>
-                </ul>
-            </div> -->
-        </div>
+</div>
+<div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+    <div class="row">
+        <!-- <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white">
+                &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
+                <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div> -->
+        <!-- <div class="col-md-6 text-center text-md-right">
+            <ul class="nav d-inline-flex">
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">Help</a>
+                </li>
+            </ul>
+        </div> -->
     </div>
-    <!-- Footer End -->
-
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
 
     <!-- Back to Top -->
@@ -465,7 +640,32 @@
 <!-- local script file  -->
 <script>
     baguetteBox.run('.compact-gallery', { animation: 'slideIn' });
+    </script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
+<!-- Your custom script for handling image enlargement -->
+<!-- Your custom script for handling image enlargement -->
+<script>
+    $(document).ready(function () {
+      $('.clickable-image').click(function () {
+        var enlargedSrc = $(this).data('enlarged-src');
+        $('#enlargedModal img').attr('src', enlargedSrc);
+        $('#enlargedModal').modal('show');
+      });
+  
+      // Optional: Close modal on click outside the image
+      $('#enlargedModal').click(function () {
+        $(this).modal('hide');
+      });
+  
+      // Prevent modal from closing when clicking on the image
+      $('#enlargedModal img').click(function (e) {
+        e.stopPropagation();
+      });
+    });
+  </script>
 </script>
 </body>
 
