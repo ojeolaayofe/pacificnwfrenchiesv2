@@ -6,8 +6,9 @@
     <title>PNW FRENCHIES</title>
 
     <!-- Favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link href="img/favicon.ico" rel="icon">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
@@ -24,32 +25,45 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
   <style>
-    .modal-body {
-      max-height: calc(100vh - 200px);
-      overflow-y: auto;
+    /* Add your custom styles here if needed */
+    .owl-carousel {
+      position: relative;
     }
 
-    .modal-body img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
+    .custom-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
       cursor: pointer;
-      transition: transform 0.3s;
+      padding: 10px;
+      border-radius: 5px;
     }
 
-    .modal-body img:hover {
-      transform: scale(1.1);
+    .custom-next-btn {
+      right: 0;
     }
 
-    .enlarged-image {
-      max-width: 100%;
-      max-height: 100%;
-      margin: auto;
-      display: block;
+    .custom-prev-btn {
+      left: 0;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
     }
     .additional-info {
       background-color: #f8f9fa;
@@ -67,7 +81,6 @@
     .additional-info a {
       margin-top: 10px;
     }
-    
   </style>
 </head>
 
@@ -77,11 +90,7 @@
         <div class="row bg-secondary py-2 px-lg-5">
             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <!-- <a class="text-white pr-3" href="">FAQs</a>
-                    <span class="text-white">|</span>
-                    <a class="text-white px-3" href="">Help</a>
-                    <span class="text-white">|</span>
-                    <a class="text-white pl-3" href="">Support</a> -->
+            
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
@@ -107,16 +116,13 @@
         <div class="row py-3 px-lg-5" style="height: 100px;">
             <div class="col-lg-4">
                 <a href="" class="navbar-brand d-none d-lg-block">
-                    <!-- <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">PacificNW</span>Frenchies</h1> -->
+                
                     <img class="trying" src="img/mydog.png">
                 </a>
             </div>
             <div class="col-lg-8 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
-                    <!-- <div class="d-inline-flex flex-column text-center pr-3 border-right">
-                        <h6>Opening Hours</h6>
-                        <p class="m-0">8.00AM - 9.00PM</p>
-                    </div> -->
+                    
                     <div class="d-inline-flex flex-column text-center px-3 border-right">
                         <h6>Email Us</h6>
                         <p class="m-0">info@pacificnwfrenchies.com</p>
@@ -137,7 +143,7 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
             <a href="" class="navbar-brand d-block d-lg-none">
-                <!-- <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">PacificNW</span>Frenchies123</h1> -->
+                
                 <img class="img-fluid" style="max-height: 450px;max-width: 35%;"  src="img/mydog.png">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -148,16 +154,7 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About</a>
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                    <!-- <a href="service.html" class="nav-item nav-link">Service</a>
-                    <a href="price.html" class="nav-item nav-link">Price</a>
-                    <a href="booking.html" class="nav-item nav-link active">Booking</a> -->
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="single.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div> -->
+                    
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <!-- <a href="" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Get Quote</a> -->
@@ -177,97 +174,7 @@
                 </h2>
                 <hr class="hr">
             </div>
-            <!-- <div class="row no-gutters">
-                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="img/dock.jpg">
-                        <img class="img-fluid image" src="img/dock.jpg">
-                        <span class="description">
-                            <span class="description-heading">Lorem Ipsum</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div> -->
-                <!-- <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="img/natur.jpg">
-                        <img class="img-fluid image" src="img/natur.jpg">
-                        <span class="description">
-                            <span class="description-heading">Lorem Ipsum</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div> -->
-                <!-- <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="img/guy.jpg">
-                        <img class="img-fluid image" src="img/guy.jpg">
-                        <span class="description">
-                            <span class="description-heading">Lorem Ipsum</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div> -->
-                <!-- <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="img/nature.jpg">
-                        <img class="img-fluid image" src="img/nature.jpg">
-                        <span class="description">
-                            <span class="description-heading">Lorem Ipsum</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div> -->
-                <!-- <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="img/lion.jpg">
-                        <img class="img-fluid image" src="img/lion.jpg">
-                        <span class="description">
-                            <span class="description-heading">Lorem Ipsum</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div> -->
-                <!-- <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="img/spance.jpg">
-                        <img class="img-fluid image" src="img/spance.jpg">
-                        <span class="description">
-                            <span class="description-heading">Lorem Ipsum</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div> -->
-                <!-- <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="img/forest.jpg">
-                        <img class="img-fluid image" src="img/forest.jpg">
-                        <span class="description">
-                            <span class="description-heading">Lorem Ipsum</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div> -->
-                <!-- <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="img/tree.jpg">
-                        <img class="img-fluid image" src="img/tree.jpg">
-                        <span class="description">
-                            <span class="description-heading">Lorem Ipsum</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div> -->
-                <!-- <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="img/water.jpg">
-                        <img class="img-fluid image" src="img/water.jpg">
-                        <span class="description">
-                            <span class="description-heading">Lorem Ipsum</span>
-                            <span class="description-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit.</span>
-                        </span>
-                    </a>
-                </div> -->
+            
             </div>
         </div>
 
@@ -287,13 +194,15 @@
                 
 
 
-<div class="container mt-5">
+<!-- Main Image -->
+<div class="container-fluid">
   <div class="row">
-    <!-- First Card -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card border-0 transform-on-hover">
-        <img src="img/kai1.png" alt="Main Image" class="rounded" data-toggle="modal" data-target="#imageModal1">
-        <div class="additional-info">
+    <div class="col-lg-4">
+      <!-- Main Image 1 -->
+      <a href="#" data-toggle="modal" data-target="#additionalImagesModal" data-lightbox="main" data-title="Main Image 1">
+        <img src="img/kai1.png" alt="Main Image 1" class="img-fluid main-image">
+      </a>
+      <div class="additional-info">
           <p>  Name: Kai </p>
           <p>ID: 123456</p>
           <p>DOB: 09/09/2023</p>
@@ -301,234 +210,258 @@
           <p>Sex: male</p>
           <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
         </div>
-      </div>
     </div>
-    
-    <!-- Second Card -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card border-0 transform-on-hover">
-        <img src="img/p1.jpeg" alt="Main Image" class="img-fluid" data-toggle="modal" data-target="#imageModal2">
-        <div class="additional-info">
-<p>  Name: pandora </p>
+    <div class="col-lg-4">
+      <!-- Main Image 1 -->
+      <a href="#" data-toggle="modal" data-target="#additionalImagesModal3" data-lightbox="main" data-title="Main Image 1">
+        <img src="img/pe1.jpeg" alt="Main Image 1" class="img-fluid main-image">
+      </a>
+      <div class="additional-info">
+          <p>  Name: pearl</p>
+          <p>ID: 123456</p>
+          <p>DOB: 09/09/2023</p>
+          <p>Type: blue  Merle</p>
+          <p>Sex: female</p>
+          <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
+        </div>
+    </div>
+    <div class="col-lg-4">
+      <!-- Main Image 1 -->
+      <a href="#" data-toggle="modal" data-target="#additionalImagesModal2" data-lightbox="main" data-title="Main Image 1">
+        <img src="img/p1.jpeg" alt="Main Image 1" class="img-fluid main-image">
+      </a>
+      <div class="additional-info">
+          <p>  Name: pandora </p>
 <p>ID: 123456</p>
 <p>DOB: 09/09/2023</p>
 <p>Color: black tri</p>
 <p>Sex: female</p>
           <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
         </div>
+    </div>
+    <div class="col-lg-4">
+      <!-- Main Image 1 -->
+      <a href="#" data-toggle="modal" data-target="#additionalImagesModal4" data-lightbox="main" data-title="Main Image 1">
+        <img src="img/l1.jpeg" alt="Main Image 1" class="img-fluid main-image">
+      </a>
+      <div class="additional-info">
+          <p>  Name: Love</p>
+          <p>ID: 123456</p>
+          <p>DOB: 09/09/2023</p>
+          <p>Type: blue fawn</p>
+          <p>Sex: male</p>
+          <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
+        </div>
+    </div>
+    <div class="col-lg-4">
+      <!-- Main Image 1 -->
+      <a href="#" data-toggle="modal" data-target="#additionalImagesModal5" data-lightbox="main" data-title="Main Image 1">
+        <img src="img/s1.jpeg" alt="Main Image 1" class="img-fluid main-image">
+      </a>
+      <div class="additional-info">
+          <p>  Name: shiloh</p>
+          <p>ID: 123456</p>
+          <p>DOB: 09/09/2023</p>
+          <p>Type: fluffy Merle</p>
+          <p>Sex: female</p>
+          <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
+        </div>
       </div>
     </div>
-    <div class="col-md-6 col-lg-4">
-        <div class="card border-0 transform-on-hover">
-          <img src="img/pe1.jpeg" alt="Main Image" class="rounded" data-toggle="modal" data-target="#imageModal3">
-          <div class="additional-info">
-            <p>  Name: pearl</p>
-            <p>ID: 123456</p>
-            <p>DOB: 09/09/2023</p>
-            <p>Type: blue  Merle</p>
-            <p>Sex: female</p>
-            <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card border-0 transform-on-hover">
-          <img src="img/l3.jpeg" alt="Main Image" class="rounded" data-toggle="modal" data-target="#imageModal4">
-          <div class="additional-info">
-            <p>  Name: Love</p>
-            <p>ID: 123456</p>
-            <p>DOB: 09/09/2023</p>
-            <p>Type: blue fawn</p>
-            <p>Sex: male</p>
-            <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
-          </div>
-        </div>
-      </div><div class="col-md-6 col-lg-4">
-        <div class="card border-0 transform-on-hover">
-          <img src="img/s1.jpeg" alt="Main Image" class="rounded" data-toggle="modal" data-target="#imageModal5">
-          <div class="additional-info">
-            <p>  Name: shiloh</p>
-            <p>ID: 123456</p>
-            <p>DOB: 09/09/2023</p>
-            <p>Type: fluffy Merle</p>
-            <p>Sex: female</p>
-            <a href="reservation.html" class="btn btn-lg btn-primary mt-3 px-2">Reserve</a>
-          </div>
-        </div>
-  </div>
-</div>
+    
+    </div>
 
-<!-- Modals for each image -->
-<!-- Modal for Image 1 -->
-<div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <!-- (content for modal 1) -->
-  <div class="modal-dialog" role="document">
+<!-- Additional Images Modal -->
+<div class="modal fade" id="additionalImagesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Additional Images</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
+
       <div class="modal-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="img/k22.png" alt="Image 1" class="img-fluid clickable-image rounded" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/k22.png">
-            </div>
-            <div class="col-md-6">
-              <img src="img/kai1.png" alt="Image 2" class="img-fluid clickable-image rounded" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
-            </div>
-            <div class="col-md-6">
-                <img src="img/kai4.jpeg" alt="Image 2" class="img-fluid clickable-image rounded" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
-              </div>
-              <div class="col-md-6">
-                <img src="img/l3.jpeg" alt="Image 2" class="img-fluid clickable-image rounded" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
-              </div>
-              
-            <!-- Add more images as needed -->
+        <!-- Owl Carousel -->
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <img src="img/kai2.jpeg" alt="Image 1">
+            <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+            <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+          </div>
+          <div class="item">
+            <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <img src="img/kai3.jpeg" alt="Image 2">
+            <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+            <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+          </div>
+          <div class="item">
+            <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <img src="img/kai4.jpeg" alt="Image 3">
+            <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+            <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+          </div>
+          <div class="item">
+            <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <img src="img/kai1.png" alt="Image 4">
+            <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+            <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
 
-<!-- Modal for Image 2 -->
-<div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <!-- (content for modal 2) -->
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Additional Images</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="img/p1.jpeg" alt="Image 1" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c1.jpg">
-            </div>
-            <div class="col-md-6">
-              <img src="img/p2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
-            </div>
-            <div class="col-md-6">
-                <img src="img/p3.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
-              </div>
-              <div class="col-md-6">
-                <img src="img/p4.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
-              </div>
-            <!-- Add more images as needed -->
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal for Image 3 -->
-<div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <!-- (content for modal 3) -->
-    <div class="modal-dialog" role="document">
+<!-- Additional Images Modal 2 -->
+<div class="modal fade" id="additionalImagesModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Additional Images</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+  
         <div class="modal-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="img/pe1.jpeg" alt="Image 1" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/pe1.jpeg">
-              </div>
-              <div class="col-md-6">
-                <img src="img/pe2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/pe2.jpeg">
-              </div>
-              <div class="col-md-6">
-                  <img src="img/pe3.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
-                </div>
-                <div class="col-md-6">
-                  <img src="img/pe4.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/c2.jpg">
-                </div>
-              <!-- Add more images as needed -->
+          <!-- Owl Carousel -->
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/p1.jpeg" alt="Image 1">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/p2.jpeg" alt="Image 2">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/p3.jpeg" alt="Image 3">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/p4.jpeg" alt="Image 4">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
             </div>
           </div>
         </div>
+  
       </div>
     </div>
   </div>
-  <!-- Modal for Image 4 -->
-<div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <!-- (content for modal 3) -->
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">More Love Pictures</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="img/l1.jpeg" alt="Image 1" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/l1.jpeg">
+  <!-- Additional Images Modal 3 -->
+<div class="modal fade" id="additionalImagesModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+  
+        <div class="modal-body">
+          <!-- Owl Carousel -->
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/pe3.jpeg" alt="Image 1">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
             </div>
-            <div class="col-md-6">
-              <img src="img/l2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/l2.jpeg">
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/pe2.jpeg" alt="Image 2">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
             </div>
-            <div class="col-md-6">
-                <img src="img/l4.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/l4.jpeg">
-              </div>
-              <div class="col-md-6">
-                <img src="img/l5.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/l5.jpeg">
-              </div>
-            <!-- Add more images as needed -->
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/pe4.jpeg" alt="Image 3">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/pe1.jpeg" alt="Image 4">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
           </div>
         </div>
+  
       </div>
     </div>
   </div>
-</div>
- <!-- Modal for Image 4 -->
- <div class="modal fade" id="imageModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <!-- (content for modal 3) -->
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">More Additional shiloh Pictures</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="img/s1.jpeg" alt="Image 1" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/s1.jpeg">
+ <!-- Additional Images Modal 4 -->
+ <div class="modal fade" id="additionalImagesModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+  
+        <div class="modal-body">
+          <!-- Owl Carousel -->
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/l1.jpeg" alt="Image 1">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
             </div>
-            <div class="col-md-6">
-              <img src="img/s2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/s2.jpeg">
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/l2.jpeg" alt="Image 2">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
             </div>
-            <div class="col-md-6">
-                <img src="img/s1.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/s1.jpeg">
-              </div>
-              <div class="col-md-6">
-                <img src="img/s2.jpeg" alt="Image 2" class="img-fluid clickable-image" data-toggle="modal" data-target="#enlargedModal" data-enlarged-src="img/s2.jpeg">
-              </div>
-            <!-- Add more images as needed -->
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/l3.jpeg" alt="Image 3">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/l4.jpeg" alt="Image 4">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
           </div>
         </div>
+  
       </div>
     </div>
   </div>
-</div>
-
-   </div>
+  <!-- Additional Images Modal 4 -->
+ <div class="modal fade" id="additionalImagesModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+  
+        <div class="modal-body">
+          <!-- Owl Carousel -->
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/s1.jpeg" alt="Image 1">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/s2.jpeg" alt="Image 2">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/s1.jpeg" alt="Image 3">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
+            <div class="item">
+              <button class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img src="img/s2.jpeg" alt="Image 4">
+              <button class="custom-nav-btn custom-prev-btn owl-nav"><span>&lt;</span></button>
+              <button class="custom-nav-btn custom-next-btn owl-nav"><span>&gt;</span></button>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
    </div>
    
 
@@ -554,60 +487,18 @@
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 mb-5">
-                    <h5 class="text-primary mb-4">Popular Links</h5>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Team</a>
-                        <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-4 mb-5">
-                    <h5 class="text-primary mb-4">Newsletter</h5>
-                    <form action="">
-                        <div class="form-group">
-                            <input type="text" class="form-control border-0" placeholder="Your Name" required="required" />
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control border-0" placeholder="Your Email" required="required" />
-                        </div>
-                        <div>
-                            <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Submit Now</button>
-                        </div>
-                    </form>
-                </div> -->
+        
             </div>
         </div>
     </div>
 </div>
 <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
     <div class="row">
-        <!-- <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white">
-                &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
-                <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
-        </div> -->
-        <!-- <div class="col-md-6 text-center text-md-right">
-            <ul class="nav d-inline-flex">
-                <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">Privacy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">Terms</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">FAQs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">Help</a>
-                </li>
-            </ul>
-        </div> -->
+        
     </div>
 </div>
+</div>
+
 <!-- Footer End -->
 
 
@@ -627,6 +518,7 @@
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
+    
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
@@ -637,36 +529,40 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <!-- local script file  -->
-<script>
+<!-- <script>
     baguetteBox.run('.compact-gallery', { animation: 'slideIn' });
-    </script>
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    </script> -->
 
-<!-- Your custom script for handling image enlargement -->
-<!-- Your custom script for handling image enlargement -->
 <script>
-    $(document).ready(function () {
-      $('.clickable-image').click(function () {
-        var enlargedSrc = $(this).data('enlarged-src');
-        $('#enlargedModal img').attr('src', enlargedSrc);
-        $('#enlargedModal').modal('show');
-      });
-  
-      // Optional: Close modal on click outside the image
-      $('#enlargedModal').click(function () {
-        $(this).modal('hide');
-      });
-  
-      // Prevent modal from closing when clicking on the image
-      $('#enlargedModal img').click(function (e) {
-        e.stopPropagation();
-      });
+  // Initialize Owl Carousel
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false, // Hide default navigation
+      items: 1
     });
-  </script>
+
+    // Custom Next Button
+    $(".custom-next-btn").click(function(){
+      $(".owl-carousel").trigger("next.owl.carousel");
+    });
+
+    // Custom Previous Button
+    $(".custom-prev-btn").click(function(){
+      $(".owl-carousel").trigger("prev.owl.carousel");
+    });
+  });
+</script>
+
 </script>
 </body>
 
